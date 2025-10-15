@@ -5,12 +5,12 @@ class Animal{
     private $llocNaixement;
     
 
-    public function __construct($tipusAnimal, $llocNaixement){
+    public function __construct(string $tipusAnimal, string $llocNaixement){
         $this->tipusAnimal = $tipusAnimal;
         $this->llocNaixement = $llocNaixement;
     }
 
-    public function __toString(){
+    public function __toString() : string{
         return "✅ Animal adoptat" . "\n" . "$this->tipusAnimal" . "\n" . "$this->llocNaixement";
     }
 
